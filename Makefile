@@ -1,4 +1,4 @@
-SOURCE_FILES ?= $(shell git ls-files "**.py")
+SOURCE_FILES ?= $(shell git ls-files '*.py' 'tests/*.py')
 
 # Run tools through the locked uv environment by default; fall back to distribution packages on PATH
 # if uv is missing or cannot be called. Override, e.g. PYTHON_RUN="" to skip uv.
